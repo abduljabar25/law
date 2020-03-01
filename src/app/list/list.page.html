@@ -1,27 +1,65 @@
 <ion-header >
-  <ion-toolbar color="dark">
+  <ion-toolbar color="medium">
     <ion-buttons slot="start" >
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-عن التطبيق
+    <ion-title  >
+        عن التطبيق
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  -->
+  <br>
+  <br>
+  <br>
+  <ion-avatar class="avatar" >
+    <img src="../../assets/im/unnamed.jpg">
+    </ion-avatar>
+    <br>
+   
+    <p class="text-center">
+        <ion-button  ion-button color="medium" round  role="button"type="button" data-toggle="collapse" data-target="#el" aria-expanded="true" aria-controls="collapseExample">
+         عن التطبيق
+              </ion-button>
+        </p>
+        <div class="collapse" id="el">
+          <div class="card card-body">
+              <dl class="text-right">
+                  <dt>التصنيف</dt>
+                  <dd>املاك الدولة</dd> 
+                  <dt>الجهة المصدرة   </dt>
+                  <dd>  العراق - اتحادي </dd> 
+                  <dt>نوع التشريع        </dt>
+                  <dd> قانون      </dd> 
+                  <dt>رقم التشريع        </dt>
+                  <dd>21 </dd> 
+                  <dt>تاريخ التشريع      </dt>
+                  <dd>     05-09-2016  </dd> 
+                  <dt>سريان التشريع        </dt>
+                  <dd> ساري      </dd> 
+                  <dt> عنوان التشريع </dt>
+                  <dd>   قانون رقم 21 لسنة 2016 التعديل الاول لقانون بيع و ايجار اموال الدولة رقم 21 لسنة 2013</dd> 
+                  <dt>المصدر         </dt>
+                  <dd>  : الوقائع العراقية |رقم العدد : 4415| تاريخ العدد :05-09-2016| رقم الصفحة : 1</dd> 
+           </dl> 
+            </div>
+        </div>
+        <p class="text-center">
+            <ion-button  ion-button color="medium" round  data-toggle="collapse" data-target="#e1l" aria-expanded="true" aria-controls="collapseExample">
+                برمجةوتصميم
+                               
+              </ion-button>
+            </p>
+            <div class="collapse" id="e1l">
+              <div class="card card-body">
+                  <dl class="text-right">
+                    <dt>GMAIL</dt>
+                    <dd> ja3.a33@gmail.com </dd>
+                    <dt>YAHOO</dt>
+                    <dd>  ja3_a33@yahoo.com </dd>
+               </dl> 
+                </div>
+            </div>
+      
 </ion-content>
